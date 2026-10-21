@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" fill="none">
+  <!-- Clean neutral studio canvas -->
+  <rect width="400" height="480" rx="16" fill="#F4F6F8"/>
+  <path d="M200 24v12M200 444v12M24 240h12M364 240h12" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Oversized T-Shirt Silhouette in Dark Forest / Sage Tone -->
+  <g filter="drop-shadow(0 6px 16px rgba(15, 23, 42, 0.08))">
+    <path d="M152 76 C170 88 230 88 248 76 L298 94 L336 172 L294 190 L274 158 L274 388 C274 394 268 400 262 400 L138 400 C132 400 126 394 126 388 L126 158 L106 190 L64 172 L102 94 Z" 
+          fill="#2D3B36" 
+          stroke="#1F2A26" 
+          stroke-width="2" 
+          stroke-linejoin="round"/>
+    
+    <!-- Ribbed Crewneck Collar -->
+    <path d="M152 76 C168 96 232 96 248 76 C238 88 162 88 152 76 Z" fill="#1F2A26"/>
+    <path d="M152 76 C170 102 230 102 248 76" stroke="#3D4F49" stroke-width="3" fill="none"/>
+
+    <!-- Seam Lines -->
+    <path d="M120 120 L152 142" stroke="#1F2A26" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M280 120 L248 142" stroke="#1F2A26" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Abstract Graphic Print -->
+    <g transform="translate(150, 185)">
+      <circle cx="50" cy="25" r="22" fill="#3D4F49" opacity="0.8"/>
+      <path d="M28 25 H72 M35 34 H65 M42 16 H58" stroke="#A7F3D0" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <line x1="130" y1="384" x2="270" y2="384" stroke="#1F2A26" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7"/>
+  </g>
+
+  <text x="200" y="440" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" letter-spacing="1.5" fill="#64748B">
+    NOBERO · GRAPHIC COTTON
+  </text>
+</svg>

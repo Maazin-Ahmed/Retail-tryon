@@ -1,0 +1,80 @@
+import { Product, StoreMetadata } from "@/types/product";
+
+export const storeMetadata: StoreMetadata = {
+  storeName: "RETAIL.",
+  tagline: "Minimal Virtual Try-On",
+  description: "A minimal virtual try-on interface to preview wardrobe pieces on you.",
+  domain: "retail.maazinahmed.in",
+  parentDomain: "maazinahmed.in",
+  curator: "Maazin Ahmed",
+};
+
+export const products: Product[] = [
+  {
+    id: "28699080",
+    productId: "28699080",
+    brand: "NOBERO",
+    name: "Graphic Printed Drop-Shoulder Sleeves Cotton Oversized T-Shirt",
+    shortName: "Graphic Drop-Shoulder Oversized Tee",
+    myntraUrl:
+      "https://www.myntra.com/tshirts/nobero/nobero-graphic-printed-drop-shoulder-sleeves-cotton-oversized-t-shirt/28699080/buy",
+    category: "T-shirts",
+    fit: "Oversized",
+    material: "Cotton",
+    color: "Blue",
+    pattern: "Graphic print",
+    neck: "Round neck",
+    sleeves: "Short, drop-shoulder sleeves",
+    sizes: ["S", "M", "L", "XL", "XXL", "3XL"],
+    priceNote: "Confirm price on Myntra",
+    image: "/images/products/nobero-graphic-tee.svg",
+    imageAlt: "NOBERO Graphic Printed Drop-Shoulder Cotton Oversized T-Shirt in Blue",
+  },
+  {
+    id: "30461458",
+    productId: "30461458",
+    brand: "NOBERO",
+    name: "Men Oversized Graphic Printed Cotton T-shirt",
+    shortName: "Oversized Graphic Printed T-shirt",
+    myntraUrl:
+      "https://www.myntra.com/tshirts/nobero/nobero-men-oversized-graphic-printed-cotton-t-shirt/30461458/buy",
+    category: "T-shirts",
+    fit: "Oversized",
+    material: "Cotton",
+    priceNote: "Confirm price on Myntra",
+    image: "/images/products/nobero-graphic-tee-30461458.svg",
+    imageAlt: "NOBERO Men Oversized Graphic Printed Cotton T-shirt",
+  },
+  {
+    id: "29896017",
+    productId: "29896017",
+    brand: "NOBERO",
+    name: "Men Animal Let Graphic Printed Pure Cotton Round Neck Oversized-Fit T-shirt",
+    shortName: "Animal Let Graphic Pure Cotton Tee",
+    myntraUrl:
+      "https://www.myntra.com/tshirts/nobero/nobero-men-animal-let-graphic-printed-pure-cotton-round-neck-oversized-fit-t-shirt/29896017/buy",
+    category: "T-shirts",
+    fit: "Oversized",
+    material: "Pure cotton",
+    neck: "Round neck",
+    priceNote: "Confirm price on Myntra",
+    image: "/images/products/nobero-animal-let-tee-29896017.svg",
+    imageAlt: "NOBERO Men Animal Let Graphic Printed Pure Cotton Round Neck Oversized-Fit T-shirt",
+  },
+  {
+    id: "41532894",
+    productId: "41532894",
+    brand: "HRX by Hrithik Roshan",
+    name: "Unisex UV-Protected Lens Square Sunglasses",
+    shortName: "Square UV-Protected Sunglasses",
+    myntraUrl:
+      "https://www.myntra.com/sunglasses/hrx+by+hrithik+roshan/hrx-by-hrithik-roshan-unisex-uv-protected-lens-square-sunglasses/41532894/buy",
+    category: "Sunglasses",
+    features: "UV-protected lenses",
+    shape: "Square",
+    audience: "Unisex",
+    priceNote: "Confirm price on Myntra",
+    image: "/images/products/hrx-square-sunglasses-41532894.svg",
+    imageAlt: "HRX by Hrithik Roshan Unisex UV-Protected Lens Square Sunglasses",
+  },
+];

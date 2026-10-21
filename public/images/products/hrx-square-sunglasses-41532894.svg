@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" fill="none">
+  <!-- Clean neutral studio canvas -->
+  <rect width="400" height="480" rx="16" fill="#F4F6F8"/>
+  <path d="M200 24v12M200 444v12M24 240h12M364 240h12" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Minimal Square Sunglasses Silhouette -->
+  <g filter="drop-shadow(0 8px 20px rgba(15, 23, 42, 0.12))" transform="translate(0, 40)">
+    <!-- Temples / Arms -->
+    <path d="M52 178 L74 150 M348 178 L326 150" stroke="#171717" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Left Frame & Lens -->
+    <rect x="74" y="140" width="104" height="88" rx="14" fill="#0A0A0A" stroke="#171717" stroke-width="6"/>
+    <rect x="80" y="146" width="92" height="76" rx="10" fill="url(#lensGradient)" stroke="#262626" stroke-width="1"/>
+    <!-- UV reflection sheen -->
+    <path d="M90 156 L154 156 L130 212 L86 212 Z" fill="#FFFFFF" opacity="0.08"/>
+
+    <!-- Bridge -->
+    <path d="M178 162 C190 156 210 156 222 162" stroke="#171717" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M182 174 C192 170 208 170 218 174" stroke="#404040" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Right Frame & Lens -->
+    <rect x="222" y="140" width="104" height="88" rx="14" fill="#0A0A0A" stroke="#171717" stroke-width="6"/>
+    <rect x="228" y="146" width="92" height="76" rx="10" fill="url(#lensGradient)" stroke="#262626" stroke-width="1"/>
+    <!-- UV reflection sheen -->
+    <path d="M238 156 L302 156 L278 212 L234 212 Z" fill="#FFFFFF" opacity="0.08"/>
+
+    <!-- UV 400 Discreet Mark -->
+    <text x="314" y="160" font-family="-apple-system, sans-serif" font-size="5" font-weight="700" fill="#737373" opacity="0.6">UV</text>
+  </g>
+
+  <defs>
+    <linearGradient id="lensGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+  </defs>
+
+  <text x="200" y="440" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" letter-spacing="1.5" fill="#64748B">
+    HRX · UV SQUARE SUNGLASSES
+  </text>
+</svg>
