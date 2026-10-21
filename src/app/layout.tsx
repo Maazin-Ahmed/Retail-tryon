@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-import { storeMetadata } from "@/data/products";
+import { storeMetadata, products } from "@/data/products";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -59,16 +60,31 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: storeMetadata.storeName,
-    url: `https://${storeMetadata.domain}`,
-    applicationCategory: "LifestyleApplication",
-    description: storeMetadata.description,
-    author: {
-      "@type": "Person",
-      name: storeMetadata.curator,
-      url: `https://${storeMetadata.parentDomain}`,
-    },
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        name: storeMetadata.storeName,
+        url: `https://${storeMetadata.domain}`,
+        applicationCategory: "LifestyleApplication",
+        description: storeMetadata.description,
+        author: {
+          "@type": "Person",
+          name: storeMetadata.curator,
+          url: `https://${storeMetadata.parentDomain}`,
+        },
+      },
+      ...products.map((p) => ({
+        "@type": "Product",
+        name: p.name,
+        image: `https://${storeMetadata.domain}${p.image}`,
+        brand: {
+          "@type": "Brand",
+          name: p.brand,
+        },
+        category: p.category,
+        url: p.myntraUrl,
+      })),
+    ],
   };
 
   return (
@@ -81,6 +97,11 @@ export default function RootLayout({
       </head>
       <body className="w-full h-full min-h-screen bg-[#FAFAFA] text-[#0A0A0A]">
         {children}
+        {/* Official Decart Anywear Virtual Try-On Widget */}
+        <Script
+          src="https://anywear.decart.ai/widget/latest/anywear.js?domain=retail.maazinahmed.in"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

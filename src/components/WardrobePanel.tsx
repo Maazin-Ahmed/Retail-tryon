@@ -80,15 +80,21 @@ export default function WardrobePanel({
                       : "border-[#EAEAEA] bg-white hover:border-[#D4D4D4] hover:bg-[#FAFAFA]"
                   }`}
                 >
-                  <div className="flex gap-2.5 sm:gap-3">
-                    {/* Product Thumbnail */}
-                    <div className="w-14 h-18 sm:w-16 sm:h-20 rounded-lg overflow-hidden bg-[#F4F6F8] shrink-0 border border-[#E5E7EB] relative flex items-center justify-center">
+                  <div className={`flex ${isSelected ? "flex-col sm:flex-row gap-3" : "gap-2.5 sm:gap-3"}`}>
+                    {/* Product Thumbnail - expanded when selected for high visual clarity and Anywear detection */}
+                    <div
+                      className={`${
+                        isSelected
+                          ? "w-full sm:w-32 h-36 sm:h-40"
+                          : "w-14 h-18 sm:w-16 sm:h-20"
+                      } rounded-lg overflow-hidden bg-[#F4F6F8] shrink-0 border border-[#E5E7EB] relative flex items-center justify-center transition-all duration-200`}
+                    >
                       {product.image ? (
                         <Image
                           src={product.image}
                           alt={product.imageAlt || product.name}
-                          width={64}
-                          height={80}
+                          width={isSelected ? 160 : 64}
+                          height={isSelected ? 180 : 80}
                           className="w-full h-full object-cover"
                           unoptimized
                         />

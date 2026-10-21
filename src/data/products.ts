@@ -27,7 +27,7 @@ export const products: Product[] = [
     sleeves: "Short, drop-shoulder sleeves",
     sizes: ["S", "M", "L", "XL", "XXL", "3XL"],
     priceNote: "Confirm price on Myntra",
-    image: "/images/products/nobero-graphic-tee.svg",
+    image: "/images/products/nobero-graphic-tee.png",
     imageAlt: "NOBERO Graphic Printed Drop-Shoulder Cotton Oversized T-Shirt in Blue",
   },
   {
@@ -42,7 +42,7 @@ export const products: Product[] = [
     fit: "Oversized",
     material: "Cotton",
     priceNote: "Confirm price on Myntra",
-    image: "/images/products/nobero-graphic-tee-30461458.svg",
+    image: "/images/products/nobero-graphic-tee-30461458.png",
     imageAlt: "NOBERO Men Oversized Graphic Printed Cotton T-shirt",
   },
   {
@@ -58,7 +58,7 @@ export const products: Product[] = [
     material: "Pure cotton",
     neck: "Round neck",
     priceNote: "Confirm price on Myntra",
-    image: "/images/products/nobero-animal-let-tee-29896017.svg",
+    image: "/images/products/nobero-animal-let-tee-29896017.png",
     imageAlt: "NOBERO Men Animal Let Graphic Printed Pure Cotton Round Neck Oversized-Fit T-shirt",
   },
   {
@@ -74,7 +74,7 @@ export const products: Product[] = [
     shape: "Square",
     audience: "Unisex",
     priceNote: "Confirm price on Myntra",
-    image: "/images/products/hrx-square-sunglasses-41532894.svg",
+    image: "/images/products/hrx-square-sunglasses-41532894.png",
     imageAlt: "HRX by Hrithik Roshan Unisex UV-Protected Lens Square Sunglasses",
   },
 ];
